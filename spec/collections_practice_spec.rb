@@ -1,4 +1,4 @@
-require 'spec_helper'
+learnrequire 'spec_helper'
 
 describe 'collections practice' do
 
