@@ -30,13 +30,16 @@ def find_a(array)
   array.select {|name| name[0] == "a"}
 end
 
-def sum_array(integer)
-  array.inject
+def sum_array(array)
+  array.inject { |sum, n| sum + n }
 end
 
 def add_s(array)
-  if index != 1
-    array.collect do |word| + "s"
+  array.collect.with_index do |word, index|
+    if index != 1 
+      word + "s"
+    else
+      word
     end
   end
 end
